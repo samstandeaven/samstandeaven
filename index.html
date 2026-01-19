@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Structure</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+      background: #ffffff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .card {
+      background: #f2f2f2;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .small-card {
+      background: #f2f2f2;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .projects {
+      position: relative;
+    }
+
+    .projects-label {
+      position: absolute;
+      top: -14px;
+      left: 24px;
+      background: #cccccc;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      background: #00a870;
+      color: white;
+      padding: 10px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-stat {
+      background: #f2f2f2;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="column">
+
+      <div class="card">
+        About me: quick bio
+      </div>
+
+      <div class="card">
+        What I’m looking for
+      </div>
+
+      <div class="small-card">
+        References
+      </div>
+
+      <div class="small-card">
+        Email reveal for inquiries
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="column">
+
+      <div class="card projects">
+        <div class="projects-label">Projects</div>
+
+        <div class="pill-grid">
+          <div class="pill">Sales Processes</div>
+          <div class="pill">SaaS Onboarding</div>
+          <div class="pill">Best practices selling</div>
+          <div class="pill">Tool Imp</div>
+          <div class="pill">Comms</div>
+        </div>
+      </div>
+
+      <div class="small-card">
+        Tools
+      </div>
+
+      <div class="footer-stat">
+        3 years XP – SaaS – Europe
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
